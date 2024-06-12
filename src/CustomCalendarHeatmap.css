@@ -1,0 +1,8 @@
+/* src/CustomCalendarHeatmap.css */
+.calendar-heatmap {
+  margin: 0 auto;
+  max-width: 900px; /* Adjust width */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #2c3e50;
+}

@@ -1,0 +1,40 @@
+/* src/TopNavBar.css */
+.top-nav-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #000000; /* Black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .top-nav-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .top-nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-nav-bar .nav-links input {
+    margin-right: 20px;
+    padding: 5px;
+  }
+  
+  .top-nav-bar .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-nav-bar .user-info span {
+    margin-right: 10px;
+  }
+  

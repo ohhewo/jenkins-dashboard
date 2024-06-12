@@ -1,0 +1,68 @@
+/* src/Sidebar.css */
+.sidebar {
+    height: calc(100% - 50px); /* Adjust height to account for the top nav bar */
+    width: 200px;
+    position: fixed;
+    top: 50px; /* Position it below the top nav bar */
+    left: 0;
+    background: linear-gradient(60%, #007A43, #BCCF00); /* Green Gradient 2 with 60/40 split */
+    padding-top: 20px;
+    color: black; /* Ensure text is black */
+    transition: width 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px; /* Collapsed width for narrow screens */
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    color: black; /* Black text for contrast */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar ul li a {
+    color: black; /* Black text for links */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #007A43; /* Hover effect with darker green */
+    color: white; /* White text on hover for contrast */
+  }
+  
+  .sidebar ul li svg {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60px; /* Collapsed width for small screens */
+    }
+  
+    .sidebar ul li {
+      justify-content: center; /* Center icons when collapsed */
+    }
+  
+    .sidebar ul li a {
+      text-align: center; /* Center text when collapsed */
+    }
+  
+    .sidebar ul li svg {
+      margin-right: 0; /* Remove space between icon and text when collapsed */
+    }
+  }
+  
